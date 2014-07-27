@@ -3,8 +3,47 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
+ h2 {
+ 	text-align: center;
+ 	font-family: 'Gentium Book Basic', serif;
+ 	font-style: italic;
+ 	font-size: 45px;
+ 	margin-top: 50px;
+ 	margin-bottom: 10px;
+ }
+
+ h4 {
+ 	text-align: center;
+ 	margin-top: 10px;
+ }
+
+ h5 {
+ 	text-align: right;
+ 	padding-right: 10px;
+ }
+
+h6 {
+	font: #FFF9EE;
+	font-size: 20px;
+	text-align: center;
+	margin: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.panel.main a {
+	font-size: 30px;
+}
+
+.panel.main li {
+	padding-bottom: 10px;
+}
+
 body {
-	background: #EEEEEE;
+	background: #FFEFD5;
 	margin: 0;
 }
 
@@ -15,10 +54,17 @@ img {
 
 ul {
 	list-style: none;
+	margin: 0;
+}
+
+.on {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
 }
 
 .block-center {
-	top: 50%;
+	top: 56%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	position: absolute;
@@ -31,16 +77,19 @@ ul {
 	height: 100vh;
 	width: 100%;
 	padding: 30px 0;
+	font-family: 'Gentium Book Basic', serif;
 }
 
 p {
-	padding: 0 30px;
+	font-size: 20px;
+	color: #474747;
 }
 
 .panel.main {
 	background-image: url("leaf.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 75%;
 	text-align: center;
 }
 .scroll-top {
@@ -49,25 +98,33 @@ p {
 	right: 10px;
  }
 
- h2 {
- 	text-align: center;
- }
-
  .image-preview {
  	width: 100%;
  	height: 150px;
  }
 
  aside {
- 	position: absolute;
- 	top: 250px;
- 	bottom: 50px;
- 	right: 0;
- 	width: 150px;
  	border: 2px solid gray;
- 	border-right: 0;
  }
 
  .constrain {
- 	width: calc(100% - 150px);
+ 	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
  }
+
+ @media(min-width: 700px) {
+ 	.constrain {
+ 		width: 600px;
+ 	}
+ }
+
+.contact {
+	position: relative;
+	height: 30vh;
+	width: 100%;
+	padding: 30px 0;
+	font: 'Gentium Book Basic', serif;
+	background: #002900;
+	color: #FFEFD5;
+}
